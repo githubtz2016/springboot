@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="GTZW:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="08f41e9e-fad3-4e2d-aba5-6a14d0398cbd" name="Default" comment="volte指标">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/DefaultView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/DefaultView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/SessionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/SessionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/HailwayLineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/HailwayLineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/IndexEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/IndexEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/VolteEntityTop5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/VolteEntityTop5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/impl/HailwayLineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/impl/HailwayLineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/ResultMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/ResultMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/common/js/highway_scenes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/common/js/highway_scenes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ztesoft/rail/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ztesoft/rail/TestApplication.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/GTZW$GTZWApplication.ic" NAME="GTZWApplication Coverage Results" MODIFIED="1542103079066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ztesoft.rail.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hailway@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="GTZW" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexPageQuotaController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/IndexPageQuotaController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SceneMonitorController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/SceneMonitorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VolteQuotaController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/VolteQuotaController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HailwayLineController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/HailwayLineController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1275#1276#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HailwayLineServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/impl/HailwayLineServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="189" column="21" lean-forward="true" selection-start-line="189" selection-start-column="21" selection-end-line="189" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GTZWApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/GTZWApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/RedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="988">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#526#981#0" expanded="true" />
+                <element signature="e#980#981#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sessionf</find>
+      <find>applic</find>
+      <find>provided</find>
+      <find>starter-tomcat</find>
+      <find>tomcat</find>
+      <find>http://10.109.209.100:9081/uac/</find>
+      <find>UpdateAppAcctSoap</find>
+      <find>WebResult</find>
+      <find>selelctByAdmin</find>
+      <find>getUserByloginNo</find>
+      <find>selectByUserCode</find>
+      <find>/error-403.html</find>
+      <find>logout</find>
+      <find>http://www.baidu.com</find>
+      <find>station</find>
+      <find>getTotalData</find>
+      <find>getHotTop3</find>
+      <find>getX2SwitchInfo</find>
+      <find>getMOS</find>
+      <find>CONCAT(ROUND(sum(X2_KP2)/sum(X2_KP1)*100,2),'%')</find>
+      <find>main3</find>
+      <find>top_middle_circle4</find>
+      <find>getRRCLogin</find>
+      <find>getVolteContinue</find>
+      <find>hailway_SIP_volte</find>
+      <find>hailway_RRC_volte</find>
+      <find>hailway_X2_volte</find>
+      <find>CommonService</find>
+      <find>getInfoByQuota</find>
+      <find>getIndexByHailwayLine</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>CONCAT(ROUND</replace>
+      <replace>100,'%')</replace>
+      <replace>RTP丢包率得分</replace>
+      <replace>startTime,endTime,</replace>
+      <replace>@Param(&quot;startTime&quot;) String startTime,@Param(&quot;endTime&quot;) String endTime,</replace>
+      <replace>ACCT_NUMBER &amp;gt;= #{startTime} and ACCT_NUMBER &amp;lt;= #{endTime}</replace>
+      <replace>,startTime,endTime</replace>
+      <replace>@Param(&quot;startTime&quot;)String startTime,@Param(&quot;endTime&quot;)String endTime</replace>
+      <replace>c.ACCT_NUMBER=#{time}</replace>
+      <replace>c.ACCT_NUMBER &amp;gt;= #{startTime} and c.ACCT_NUMBER &amp;lt;= #{endTime}</replace>
+      <replace />
+      <replace>&lt;if test=&quot;startTime!=null and startTime!=''&quot;&gt;</replace>
+      <replace>value: '--'</replace>
+      <replace>theRank</replace>
+      <replace>SCNG4GHW</replace>
+      <replace>http://10.109.209.100:9081/uac</replace>
+      <replace>hailway_sip_volte</replace>
+      <replace>hailway_rrc_volte</replace>
+      <replace>hailway_x2_volte</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/log/dfaf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/log/FourAccountLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/fdfa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/dfaf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/UserModifyreq.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/ModifyBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/XmlorMapUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/fdfdf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/SuccessBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/ErrorBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/RspBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/xmlEntity/UserModifyrsp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/log/Log4AListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/log/Log4AUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/IPUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/log/FourAccountLogMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/Axis2ClientUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/log/FourAccountConstant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/XmlUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/HttpClientUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/error.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/impl/CommonTokenServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/CxfConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/CommonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/CxfClientUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/FourAccountWeb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/CommonTokenService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/impl/FourAccountWebImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/top.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/dao/VolteIndexDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/impl/QuotaVlotePageImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/js/quota.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/VolteIndex.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/SessionFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/DefaultView.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/js/highway_scenes.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/ResultMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/IndexEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/VolteEntityTop5.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/HailwayLineController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/impl/HailwayLineServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rail" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rail" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rail" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rail" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GTZW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GTZW" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.28045976" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\worksoft\workspace\GTZW\src\main\webapp\WEB-INF" />
+      <recent name="F:\worksoft\workspace\GTZW\src\main\resources\mapper" />
+      <recent name="F:\worksoft\workspace\GTZW\src\main\webapp\common\js" />
+      <recent name="F:\worksoft\workspace\GTZW\src\main\resources\static" />
+      <recent name="F:\worksoft\workspace\GTZW\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ztesoft.rail.webService" />
+      <recent name="com.ztesoft.rail.utils" />
+      <recent name="com.ztesoft.rail.xmlEntity" />
+      <recent name="com.ztesoft.rail.service" />
+      <recent name="com.ztesoft.rail.dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\worksoft\workspace\GTZW\src\main\webapp" />
+      <recent name="F:\worksoft\workspace\GTZW\src\main\resources\static" />
+      <recent name="F:\worksoft\workspace\GTZW\src\main\webapp\WEB-INF\lib" />
+      <recent name="F:\worksoft\workspace\GTZW\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GTZWApplication">
+    <configuration name="CxfClientUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ztesoft.rail.utils.CxfClientUtil" />
+      <module name="GTZW" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ztesoft.rail.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TestApplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GTZW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ztesoft.rail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ztesoft.rail" />
+      <option name="MAIN_CLASS_NAME" value="com.ztesoft.rail.TestApplication" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestApplication.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GTZW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ztesoft.rail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ztesoft.rail" />
+      <option name="MAIN_CLASS_NAME" value="com.ztesoft.rail.TestApplication" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GTZWApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="GTZW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ztesoft.rail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ztesoft.rail.GTZWApplication" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.78" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_GTZW" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61715" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.78" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_GTZW" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61715" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Unnamed" />
+      <item itemvalue="Spring Boot.GTZWApplication" />
+      <item itemvalue="JUnit.TestApplication.contextLoads" />
+      <item itemvalue="JUnit.TestApplication" />
+      <item itemvalue="Application.CxfClientUtil" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CxfClientUtil" />
+        <item itemvalue="JUnit.TestApplication" />
+        <item itemvalue="JUnit.TestApplication.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\tangzheng\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\worksoft\workspace\GTZW" />
+          <option name="myCopyRoot" value="F:\worksoft\workspace\GTZW" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\worksoft\workspace\GTZW\src\main\java\com\ztesoft\rail\domain" />
+          <option name="myCopyRoot" value="F:\worksoft\workspace\GTZW\src\main\java\com\ztesoft\rail\domain" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="F:\worksoft\workspace\GTZW" />
+          <option name="myCopyRoot" value="F:\worksoft\workspace\GTZW" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08f41e9e-fad3-4e2d-aba5-6a14d0398cbd" name="Default" comment="" />
+      <created>1532414462860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532414462860</updated>
+      <workItem from="1532414464518" duration="9075000" />
+      <workItem from="1532483102481" duration="8014000" />
+      <workItem from="1532499429706" duration="9003000" />
+      <workItem from="1532585771521" duration="13564000" />
+      <workItem from="1532678798821" duration="5809000" />
+      <workItem from="1532747091715" duration="12531000" />
+      <workItem from="1532914315883" duration="22269000" />
+      <workItem from="1533000548101" duration="7198000" />
+      <workItem from="1533087267935" duration="12084000" />
+      <workItem from="1533107860386" duration="12407000" />
+      <workItem from="1533173311844" duration="19962000" />
+      <workItem from="1533259940607" duration="14058000" />
+      <workItem from="1533363917668" duration="15550000" />
+      <workItem from="1533468824093" duration="6776000" />
+      <workItem from="1533519286856" duration="18917000" />
+      <workItem from="1533605011031" duration="2127000" />
+      <workItem from="1533609052697" duration="150000" />
+      <workItem from="1533613113956" duration="5400000" />
+      <workItem from="1533692149372" duration="26088000" />
+      <workItem from="1533780578674" duration="16290000" />
+      <workItem from="1533865084936" duration="20287000" />
+      <workItem from="1534123353533" duration="15501000" />
+      <workItem from="1534210573135" duration="11675000" />
+      <workItem from="1534296553518" duration="8103000" />
+      <workItem from="1534385496451" duration="666000" />
+      <workItem from="1534401383465" duration="6534000" />
+      <workItem from="1534470302384" duration="3461000" />
+      <workItem from="1534477470516" duration="4478000" />
+      <workItem from="1534729558414" duration="18431000" />
+      <workItem from="1534815466857" duration="6146000" />
+      <workItem from="1534901579647" duration="700000" />
+      <workItem from="1534923849201" duration="6028000" />
+      <workItem from="1534988547940" duration="12360000" />
+      <workItem from="1535334882609" duration="21372000" />
+      <workItem from="1535419955944" duration="19130000" />
+      <workItem from="1535506466097" duration="12763000" />
+      <workItem from="1535533673037" duration="584000" />
+      <workItem from="1535593007683" duration="18308000" />
+      <workItem from="1535679793020" duration="2610000" />
+      <workItem from="1535967340608" duration="1200000" />
+      <workItem from="1536200402290" duration="40000" />
+      <workItem from="1536545272451" duration="2000" />
+      <workItem from="1536887212002" duration="6226000" />
+      <workItem from="1536918836031" duration="17000" />
+      <workItem from="1537177922536" duration="910000" />
+      <workItem from="1537235909754" duration="839000" />
+      <workItem from="1537239028972" duration="7383000" />
+      <workItem from="1537322167036" duration="14507000" />
+      <workItem from="1537407754733" duration="98000" />
+      <workItem from="1537493508435" duration="2765000" />
+      <workItem from="1537496611410" duration="4333000" />
+      <workItem from="1537840287190" duration="1098000" />
+      <workItem from="1537863164697" duration="610000" />
+      <workItem from="1537926787033" duration="5750000" />
+      <workItem from="1538019145775" duration="191000" />
+      <workItem from="1538043298463" duration="1006000" />
+      <workItem from="1538098416307" duration="6612000" />
+      <workItem from="1538184959422" duration="1215000" />
+      <workItem from="1538189646130" duration="6015000" />
+      <workItem from="1538206490267" duration="3105000" />
+      <workItem from="1538271194068" duration="726000" />
+      <workItem from="1538966714419" duration="6796000" />
+      <workItem from="1538983291366" duration="8039000" />
+      <workItem from="1539050640088" duration="14733000" />
+      <workItem from="1539135289081" duration="19730000" />
+      <workItem from="1539221739090" duration="6440000" />
+      <workItem from="1539239703181" duration="4135000" />
+      <workItem from="1539248069010" duration="5284000" />
+      <workItem from="1539308612201" duration="1695000" />
+      <workItem from="1539325748065" duration="272000" />
+      <workItem from="1539332981008" duration="1961000" />
+      <workItem from="1539571470356" duration="1302000" />
+      <workItem from="1539597682842" duration="37000" />
+      <workItem from="1540172975448" duration="2548000" />
+      <workItem from="1540190293133" duration="9022000" />
+      <workItem from="1540259314631" duration="2885000" />
+      <workItem from="1540267061212" duration="2491000" />
+      <workItem from="1540344244224" duration="621000" />
+      <workItem from="1540366622034" duration="970000" />
+      <workItem from="1540519114513" duration="1335000" />
+      <workItem from="1540536413089" duration="356000" />
+      <workItem from="1540540778636" duration="17000" />
+      <workItem from="1540779204447" duration="9485000" />
+      <workItem from="1540863564035" duration="4628000" />
+      <workItem from="1540949299671" duration="14614000" />
+      <workItem from="1541038809425" duration="10183000" />
+      <workItem from="1541381321046" duration="22317000" />
+      <workItem from="1541467482309" duration="20911000" />
+      <workItem from="1541554565460" duration="28000000" />
+      <workItem from="1541657748296" duration="4954000" />
+      <workItem from="1541727118813" duration="20290000" />
+      <workItem from="1541939923224" duration="3792000" />
+      <workItem from="1541987581465" duration="19579000" />
+      <workItem from="1542072161510" duration="27469000" />
+      <workItem from="1542163543232" duration="8573000" />
+      <workItem from="1542245604051" duration="1916000" />
+      <workItem from="1542275691753" duration="770000" />
+      <workItem from="1542331937088" duration="1096000" />
+      <workItem from="1542339491727" duration="449000" />
+      <workItem from="1542340703484" duration="923000" />
+      <workItem from="1542765147195" duration="2898000" />
+      <workItem from="1542781325290" duration="1253000" />
+      <workItem from="1542782932493" duration="11000" />
+      <workItem from="1544406094676" duration="3321000" />
+      <workItem from="1544517964700" duration="1182000" />
+      <workItem from="1544519769692" duration="659000" />
+      <workItem from="1544599882103" duration="8274000" />
+      <workItem from="1544664974717" duration="4018000" />
+      <workItem from="1544684014188" duration="9760000" />
+      <workItem from="1544752025285" duration="18551000" />
+      <workItem from="1544785870846" duration="541000" />
+      <workItem from="1544786556792" duration="3608000" />
+      <workItem from="1544792433910" duration="58000" />
+      <workItem from="1545011526976" duration="3012000" />
+      <workItem from="1545028692620" duration="10483000" />
+      <workItem from="1545097078057" duration="4597000" />
+      <workItem from="1545127063155" duration="613000" />
+      <workItem from="1545183090892" duration="1820000" />
+      <workItem from="1547802403880" duration="2205000" />
+      <workItem from="1548038162851" duration="2740000" />
+      <workItem from="1548058422135" duration="629000" />
+      <workItem from="1550212199504" duration="2209000" />
+      <workItem from="1550821307149" duration="1186000" />
+      <workItem from="1550827102820" duration="1214000" />
+      <workItem from="1552899620242" duration="1080000" />
+      <workItem from="1552901992219" duration="818000" />
+      <workItem from="1552967238668" duration="593000" />
+      <workItem from="1553653642781" duration="16102000" />
+      <workItem from="1553736801277" duration="16415000" />
+      <workItem from="1553823334473" duration="4440000" />
+      <workItem from="1554082540450" duration="20989000" />
+    </task>
+    <task id="LOCAL-00021">
+      <created>1533551241033</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1533551241033</updated>
+    </task>
+    <task id="LOCAL-00022" summary="12指标修改">
+      <created>1533700703487</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1533700703487</updated>
+    </task>
+    <task id="LOCAL-00023" summary="12指标修改">
+      <created>1533715694906</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1533715694906</updated>
+    </task>
+    <task id="LOCAL-00024" summary="12指标修改">
+      <created>1533717578440</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1533717578440</updated>
+    </task>
+    <task id="LOCAL-00025">
+      <created>1533727332152</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1533727332152</updated>
+    </task>
+    <task id="LOCAL-00026" summary="12指标修改">
+      <created>1533729940166</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1533729940166</updated>
+    </task>
+    <task id="LOCAL-00027">
+      <created>1533784009046</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1533784009047</updated>
+    </task>
+    <task id="LOCAL-00028" summary="首页完善">
+      <created>1533804154965</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1533804154965</updated>
+    </task>
+    <task id="LOCAL-00029" summary="volte页面接口">
+      <created>1533814131973</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1533814131973</updated>
+    </task>
+    <task id="LOCAL-00030" summary="volte指标">
+      <created>1533881323379</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1533881323379</updated>
+    </task>
+    <task id="LOCAL-00031" summary="volte指标">
+      <created>1533883268476</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1533883268476</updated>
+    </task>
+    <task id="LOCAL-00032" summary="volte指标">
+      <created>1533892555965</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1533892555965</updated>
+    </task>
+    <task id="LOCAL-00033" summary="volte指标">
+      <created>1534124543414</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1534124543414</updated>
+    </task>
+    <task id="LOCAL-00034" summary="volte指标">
+      <created>1534129781930</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1534129781930</updated>
+    </task>
+    <task id="LOCAL-00035" summary="时间粒度查询修改">
+      <created>1534131666850</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1534131666850</updated>
+    </task>
+    <task id="LOCAL-00036">
+      <created>1534142484885</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1534142484885</updated>
+    </task>
+    <task id="LOCAL-00037" summary="代码合并  部分">
+      <created>1534152591704</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1534152591704</updated>
+    </task>
+    <task id="LOCAL-00038" summary="添加line_id字段">
+      <created>1534227975787</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1534227975787</updated>
+    </task>
+    <task id="LOCAL-00039" summary="volte指标">
+      <created>1534401824759</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1534401824760</updated>
+    </task>
+    <task id="LOCAL-00040" summary="app启动注册添加">
+      <created>1534406341711</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1534406341711</updated>
+    </task>
+    <task id="LOCAL-00041">
+      <created>1534473198967</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1534473198967</updated>
+    </task>
+    <task id="LOCAL-00042" summary="登录验证">
+      <created>1534737564819</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1534737564819</updated>
+    </task>
+    <task id="LOCAL-00043" summary="session页面权限验证">
+      <created>1534820926894</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1534820926895</updated>
+    </task>
+    <task id="LOCAL-00044">
+      <created>1535019333908</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1535019333908</updated>
+    </task>
+    <task id="LOCAL-00045" summary="场景监控页面-- 数据统计，仪表盘，地图">
+      <created>1535364918079</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1535364918079</updated>
+    </task>
+    <task id="LOCAL-00046">
+      <created>1535451268647</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1535451268648</updated>
+    </task>
+    <task id="LOCAL-00047">
+      <created>1535967405593</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1535967405593</updated>
+    </task>
+    <task id="LOCAL-00048">
+      <created>1536887364191</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1536887364191</updated>
+    </task>
+    <task id="LOCAL-00049">
+      <created>1537343052025</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1537343052025</updated>
+    </task>
+    <task id="LOCAL-00050">
+      <created>1538271385894</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1538271385895</updated>
+    </task>
+    <task id="LOCAL-00051">
+      <created>1539240782353</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1539240782355</updated>
+    </task>
+    <task id="LOCAL-00052">
+      <created>1540192681101</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1540192681102</updated>
+    </task>
+    <task id="LOCAL-00053">
+      <created>1540799915762</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1540799915762</updated>
+    </task>
+    <task id="LOCAL-00054" summary="4a单点登录接口">
+      <created>1541140506806</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1541140506806</updated>
+    </task>
+    <task id="LOCAL-00055" summary="账号管理接口">
+      <created>1541414449389</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1541414449389</updated>
+    </task>
+    <task id="LOCAL-00056">
+      <created>1541591354246</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1541591354247</updated>
+    </task>
+    <task id="LOCAL-00057">
+      <created>1541757100879</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1541757100880</updated>
+    </task>
+    <task id="LOCAL-00058">
+      <created>1541994577032</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1541994577033</updated>
+    </task>
+    <task id="LOCAL-00059">
+      <created>1542072302857</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1542072302858</updated>
+    </task>
+    <task id="LOCAL-00060">
+      <created>1542100782418</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1542100782418</updated>
+    </task>
+    <task id="LOCAL-00061">
+      <created>1542106587926</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1542106587926</updated>
+    </task>
+    <task id="LOCAL-00062">
+      <created>1542164615877</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1542164615880</updated>
+    </task>
+    <task id="LOCAL-00063">
+      <created>1544698375472</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1544698375472</updated>
+    </task>
+    <task id="LOCAL-00064">
+      <created>1544782851367</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1544782851368</updated>
+    </task>
+    <task id="LOCAL-00065">
+      <created>1544789193746</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1544789193747</updated>
+    </task>
+    <task id="LOCAL-00066">
+      <created>1545037814489</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1545037814490</updated>
+    </task>
+    <task id="LOCAL-00067">
+      <created>1545102953171</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1545102953172</updated>
+    </task>
+    <task id="LOCAL-00068" summary="部分详情展示">
+      <created>1553755250523</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1553755250524</updated>
+    </task>
+    <task id="LOCAL-00069" summary="配置修改">
+      <created>1553756037017</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1553756037017</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestApplication - 2018.10.08 at 15h 25m 36s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.10.08 at 15h 59m 29s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.10.08 at 16h 05m 50s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.10.08 at 16h 20m 20s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.10.08 at 17h 57m 20s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.10.08 at 17h 58m 38s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.10.08 at 18h 07m 20s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.10.08 at 18h 07m 57s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.10.11 at 17h 46m 25s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestApplication - 2018.10.11 at 17h 53m 31s.xml">
+      <configuration name="TestApplication" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="926954000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50075644" side_tool="true" weight="0.43564355" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32838285" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.24357034" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32980332" />
+      <window_info id="Structure" order="1" sideWeight="0.5033003" side_tool="true" weight="0.16944024" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info id="UI Designer" order="4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.29867986" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.29867986" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3960396" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.4339934" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49924356" weight="0.34488449" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.20462047" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49669966" visible="true" weight="0.22314675" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32980332" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" sideWeight="0.50165015" side_tool="true" weight="0.21482602" />
+      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.26567656" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.24917492" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32838285" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.24917492" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.29042906" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.21122113" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.29867986" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.4339934" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.28712872" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.24357034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19742814" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32980332" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32980332" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30528054" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="整合前后端架构，连通测试ok" />
+    <MESSAGE value="添加共通js类" />
+    <MESSAGE value="修改前端目录结构" />
+    <MESSAGE value="监控页面" />
+    <MESSAGE value="mysql 连接配置修改" />
+    <MESSAGE value="前后台接通范例" />
+    <MESSAGE value="监控页面完善" />
+    <MESSAGE value="首页部分接口" />
+    <MESSAGE value="12指标修改" />
+    <MESSAGE value="首页完善" />
+    <MESSAGE value="volte页面接口" />
+    <MESSAGE value="时间粒度查询修改" />
+    <MESSAGE value="代码合并  部分" />
+    <MESSAGE value="添加line_id字段" />
+    <MESSAGE value="volte指标" />
+    <MESSAGE value="app启动注册添加" />
+    <MESSAGE value="登录验证" />
+    <MESSAGE value="session页面权限验证" />
+    <MESSAGE value="场景监控页面-- 数据统计，仪表盘，地图" />
+    <MESSAGE value="4a单点登录接口" />
+    <MESSAGE value="账号管理接口" />
+    <MESSAGE value="部分展示详情修改" />
+    <MESSAGE value="部分详情展示修改" />
+    <MESSAGE value="部分详情展示" />
+    <MESSAGE value="配置修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置修改" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ztesoft/rail/TestApplication.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ztesoft/rail/TestApplication.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ztesoft/rail/TestApplication.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ztesoft/rail/TestApplication.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ztesoft/rail/TestApplication.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/CxfClientUtil.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/SceneMonitorController.java</url>
+          <line>101</line>
+          <properties class="com.ztesoft.rail.controller.SceneMonitorController">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="123" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((HashMap)mapput).entrySet().toArray()[5]" custom="java.util.HashMap" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/js/hailwayLine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE.jar!/org/springframework/core/Ordered.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/heiheihei.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HailwayMapData.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="446" column="31" selection-start-line="446" selection-start-column="14" selection-end-line="446" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/thread/taskThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/schedulerTask/SchedulerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/dao/IQuotaVoltePageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/VolteIndex.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/dao/VolteIndexDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HailwayVolltePage.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/FourAccountWeb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/impl/FourAccountWebImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="123" column="61" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/impl/CommonTokenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/CommonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/webService/CommonTokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2660">
+          <caret line="140" column="43" selection-start-line="140" selection-start-column="43" selection-end-line="140" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/CxfClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sceneMonitoring.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="18" column="75" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE.jar!/org/springframework/cache/annotation/CachingConfigurerSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/HailwayCommunityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/HailwayCity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/VolteEntityTop5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/HailwayCommunity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/HailwayHttpH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/HailwayLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/HailwayQuota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/domain/IndexEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/utils/ResultMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/CxfConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/ControllerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/SessionFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/DatasourceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/js/quota.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="264" column="29" selection-start-line="264" selection-start-column="9" selection-end-line="264" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/js/highway_scenes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-319">
+          <caret line="433" column="64" lean-forward="true" selection-start-line="433" selection-start-column="64" selection-end-line="433" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/DefaultView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/IndexPageQuotaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/SceneMonitorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/impl/QuotaVlotePageImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="301" column="51" selection-start-line="301" selection-start-column="37" selection-end-line="301" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/GTZWApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="189" column="21" lean-forward="true" selection-start-line="189" selection-start-column="21" selection-end-line="189" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/HailwayLineController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/controller/VolteQuotaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#526#981#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ztesoft/rail/service/impl/HailwayLineServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>GTZW:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28045976" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (GTZW)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28045976" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28045976" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28045976" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|GTZW</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28045976" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-core:2.8.10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.28045976" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

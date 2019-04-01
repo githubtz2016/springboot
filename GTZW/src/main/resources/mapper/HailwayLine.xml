@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ztesoft.rail.dao.HailwayLineDao">
+  <resultMap id="ResultMap" type="com.ztesoft.rail.domain.HailwayLine">
+    <id column="LINE_ID" jdbcType="INTEGER" property="id" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+
+  <!--查询所有高铁线路-->
+  <select id="getAllHailwayLine" resultMap="ResultMap">
+    select * from hailway_line
+  </select>
+
+  <!--#根据线路查网页浏览类页面响应成功率(%),页面响应平均时延(ms),HTTP下载速率(kbps)-->
+  <select id="getHttpIndex" resultType="map" parameterType="String">
+    select CONCAT(ROUND(SUM(HTTP_KP2)/SUM(HTTP_KP1)*100,2),'%') HTTP_IND1,
+    ROUND(SUM(HTTP_KP3)/SUM(HTTP_KP2)/1000) HTTP_IND2,
+    (CASE WHEN SUM(HTTP_KP8) = 0 THEN 0 ELSE ROUND(SUM(HTTP_KP7*8000)*1000/SUM(HTTP_KP8*1024),2) END) HTTP_IND5
+    FROM hailway_http_h where ACCT_NUMBER &gt;= #{startTime} and ACCT_NUMBER &lt;= #{endTime} and line_id = #{lineId}
+  </select>
+
+  <!--#根据线路查应用下载速率(kbps)-->
+  <select id="getFtpIndex" resultType="map" parameterType="String">
+    SELECT (CASE WHEN SUM(FTP_KP2) = 0 THEN 0 ELSE ROUND(SUM(FTP_KP1*8000)*1000/SUM(FTP_KP2*1024),2) END) FTP_IND1
+    FROM hailway_ftp_h where ACCT_NUMBER &gt;= #{startTime} and ACCT_NUMBER &lt;= #{endTime} and line_id = #{lineId}
+  </select>
+
+  <!--#根据线路查IM登陆成功率(%),IM 200KB以上上传速率（kbps,IM 200KB以上下载速率（kbps）-->
+  <select id="getImIndex" resultType="map" parameterType="String">
+    SELECT CONCAT(ROUND(IM_KP2/IM_KP1,2)*100,'%') IM_IND1,
+    (CASE WHEN SUM(IM_KP4) = 0 THEN 0 ELSE ROUND(SUM(IM_KP3*8000)*1000/SUM(IM_KP4*1024),2) END) IM_IND2,
+    (CASE WHEN SUM(IM_KP6) = 0 THEN 0 ELSE ROUND(SUM(IM_KP5*8000)*1000/SUM(IM_KP6*1024),2) END) IM_IND3
+    FROM hailway_im_h where ACCT_NUMBER &gt;= #{startTime} and ACCT_NUMBER &lt;= #{endTime} and line_id = #{lineId}
+  </select>
+
+  <!--#根据线路查播放成功率(%),视频下载速率（kbps）-->
+  <select id="getVideoIndex" resultType="map" parameterType="String">
+    SELECT CONCAT(ROUND(SUM(VIDEO_KP2)/SUM(VIDEO_KP1)*100,2),'%') VIDEO_IND1,
+    (CASE WHEN SUM(VIDEO_KP4) = 0 THEN 0 ELSE ROUND(SUM(VIDEO_KP3*8000)*1.0/SUM(VIDEO_KP4*1024),2) END) VIDEO_IND2
+    FROM  hailway_video_h where ACCT_NUMBER &gt;= #{startTime} and ACCT_NUMBER &lt;= #{endTime} and line_id = #{lineId}
+  </select>
+
+
+  <!--#根据线路查RRC连接建立成功率-->
+  <select id="getUUIndex" resultType="map" parameterType="String">
+    SELECT CONCAT(ROUND(SUM(UU_KP2)/SUM(UU_KP1)*100,2),'%') UU_IND1
+    FROM  hailway_uu_h where ACCT_NUMBER &gt;= #{startTime} and ACCT_NUMBER &lt;= #{endTime} and line_id = #{lineId}
+  </select>
+
+  <!--#根据线路查ATTACH成功率,TAU成功率-->
+  <select id="getS1mmeIndex" resultType="map" parameterType="String">
+    SELECT CONCAT(ROUND(SUM(S1MME_KP2)/SUM(S1MME_KP1)*100,2),'%') S1MME_IND1,
+    CONCAT(ROUND(SUM(S1MME_KP4)/SUM(S1MME_KP3)*100,2),'%') S1MME_IND2
+    FROM  hailway_s1mme_h where ACCT_NUMBER &gt;= #{startTime} and ACCT_NUMBER &lt;= #{endTime} and line_id = #{lineId}
+  </select>
+
+
+
+
+
+</mapper>

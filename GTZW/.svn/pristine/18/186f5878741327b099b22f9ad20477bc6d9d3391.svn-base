@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ztesoft.rail.dao.IQuotaIndexPageDao">
+
+
+		<!--响应成功率 -->
+	<select id="getFirstTop5ByHTTP_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(SUM(c.HTTP_KP2)/SUM(c.HTTP_KP1)*100,2),'%') value,SUM(c.HTTP_KP2)/SUM(c.HTTP_KP1) theRank from
+hailway_community a,hailway_city b,hailway_http_h c
+where  a.city_id = b.city_id and c.CI= a.CI 
+<if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if>
+ group by a.CI ORDER BY theRank DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByHTTP_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(SUM(c.HTTP_KP2)/SUM(c.HTTP_KP1)*100,2),'%') value,SUM(c.HTTP_KP2)/SUM(c.HTTP_KP1) theRank from
+hailway_community a,hailway_city b,hailway_http_h c
+where a.city_id = b.city_id and c.LINE_ID = a.line_id <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> group by a.CI ORDER BY theRank ASC LIMIT 5
+	</select>
+	
+	<!-- 通过页面平均时延 -->
+	<select id="getFirstTop5ByHTTP_IND2" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(c.HTTP_KP3)/SUM(c.HTTP_KP2)) value from 
+hailway_community a,hailway_city b,hailway_http_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> group by a.CI ORDER BY value DESC LIMIT 5
+
+	</select>
+	
+	<select id="getLastTop5ByHTTP_IND2" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(c.HTTP_KP3)/SUM(c.HTTP_KP2)) value from 
+hailway_community a,hailway_city b,hailway_http_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> group by a.CI ORDER BY value ASC LIMIT 5
+
+	</select>
+	
+	<!--// HTTP下载速率(kbps)  -->
+	<select id="getFirstTop5ByHTTP_IND5" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(HTTP_KP7*8000)*1.0/SUM(HTTP_KP8*1024),2) value from 
+hailway_community a,hailway_city b,hailway_http_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByHTTP_IND5" resultType="map">
+	select a.community_name,b.city_name,ROUND(SUM(HTTP_KP7*8000)*1.0/SUM(HTTP_KP8*1024),2) value from 
+hailway_community a,hailway_city b,hailway_http_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value ASC LIMIT 5
+</select>
+
+<!-- #应用下载下载速率 -->
+	<select id="getFirstTop5ByFTP_IND1" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(FTP_KP1*8000)*1.0/SUM(FTP_KP2*1024),2) value from 
+hailway_community a,hailway_city b,hailway_ftp_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByFTP_IND1" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(FTP_KP1*8000)*1.0/SUM(FTP_KP2*1024),2) value from 
+hailway_community a,hailway_city b,hailway_ftp_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value ASC LIMIT 5
+	</select>
+	
+	<!-- #IM登陆成功率(%) -->
+	<select id="getFirstTop5ByIM_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(IM_KP2/IM_KP1,2)*100,'%') value,ROUND(IM_KP2/IM_KP1,2)*100 theRank from
+hailway_community a,hailway_city b,hailway_im_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByIM_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(IM_KP2/IM_KP1,2)*100,'%') value,ROUND(IM_KP2/IM_KP1,2)*100 theRank from
+hailway_community a,hailway_city b,hailway_im_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank ASC LIMIT 5
+	</select>
+	
+	<!--  #IM 200KB以上上传速率（）-->
+	<select id="getFirstTop5ByIM_IND2" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(IM_KP3*8000)*1.0/SUM(IM_KP4*1024),2) value from 
+hailway_community a,hailway_city b,hailway_im_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByIM_IND2" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(IM_KP3*8000)*1.0/SUM(IM_KP4*1024),2) value from 
+hailway_community a,hailway_city b,hailway_im_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value ASC LIMIT 5
+	</select>
+	
+	<!--#IM 200KB以上下载速率（）  -->
+	
+	<select id="getFirstTop5ByIM_IND3" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(IM_KP5*8000)*1.0/SUM(IM_KP6*1024),2) value from 
+hailway_community a,hailway_city b,hailway_im_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByIM_IND3" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(IM_KP5*8000)*1.0/SUM(IM_KP6*1024),2) value from 
+hailway_community a,hailway_city b,hailway_im_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value ASC LIMIT 5
+	</select>
+	
+	<!-- #播放成功率(%) -->
+	
+	<select id="getFirstTop5ByVIDEO_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(SUM(VIDEO_KP2)/SUM(VIDEO_KP1)*100,2),'%')value,ROUND(SUM(VIDEO_KP2)/SUM(VIDEO_KP1)*100,2) theRank from
+hailway_community a,hailway_city b,hailway_video_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByVIDEO_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(SUM(VIDEO_KP2)/SUM(VIDEO_KP1)*100,2),'%') value,ROUND(SUM(VIDEO_KP2)/SUM(VIDEO_KP1)*100,2) theRank from
+hailway_community a,hailway_city b,hailway_video_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank ASC LIMIT 5
+	</select>
+	
+	<!--  #视频下载速率（kbps）-->
+	<select id="getFirstTop5ByVIDEO_IND2" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(VIDEO_KP3*8000)*1.0/SUM(VIDEO_KP4*1024),2) value from 
+hailway_community a,hailway_city b,hailway_video_h c
+where a.city_id = b.city_id and c.CI = a.CI<if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByVIDEO_IND2" resultType="map">
+		select a.community_name,b.city_name,ROUND(SUM(VIDEO_KP3*8000)*1.0/SUM(VIDEO_KP4*1024),2) value from 
+hailway_community a,hailway_city b,hailway_video_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY value ASC LIMIT 5
+	</select>
+	
+	<!-- RRC连接建立成功率 -->
+	<select id="getFirstTop5ByUU_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(UU_KP2/UU_KP1,2)*100,'%') value,ROUND(UU_KP2/UU_KP1,2)*100 theRank  from
+hailway_community a,hailway_city b,hailway_uu_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByUU_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(UU_KP2/UU_KP1,2)*100,'%') value,ROUND(UU_KP2/UU_KP1,2)*100 theRank  from
+hailway_community a,hailway_city b,hailway_uu_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank ASC LIMIT 5
+	</select>
+	
+	<!-- #ATTACH成功率 -->
+	<select id="getFirstTop5ByS1MME_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(SUM(S1MME_KP2)/SUM(S1MME_KP1)*100,2),'%') value,SUM(S1MME_KP2)/SUM(S1MME_KP1) theRank  from
+hailway_community a,hailway_city b,hailway_s1mme_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByS1MME_IND1" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(SUM(S1MME_KP2)/SUM(S1MME_KP1)*100,2),'%') value,SUM(S1MME_KP2)/SUM(S1MME_KP1) theRank  from
+hailway_community a,hailway_city b,hailway_s1mme_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank ASC LIMIT 5
+	</select>
+	
+	<!--#TAU成功率  -->
+	
+	<select id="getFirstTop5ByS1MME_IND2" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(SUM(S1MME_KP4)/SUM(S1MME_KP3)*100,2),'%') value,ROUND(SUM(S1MME_KP4)/SUM(S1MME_KP3)*100,2) theRank   from
+hailway_community a,hailway_city b,hailway_s1mme_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank DESC LIMIT 5
+	</select>
+	
+	<select id="getLastTop5ByS1MME_IND2" resultType="map">
+		select a.community_name,b.city_name,CONCAT(ROUND(SUM(S1MME_KP4)/SUM(S1MME_KP3)*100,2),'%') value,ROUND(SUM(S1MME_KP4)/SUM(S1MME_KP3)*100,2) theRank   from
+hailway_community a,hailway_city b,hailway_s1mme_h c
+where a.city_id = b.city_id and c.CI = a.CI <if test="startTime!=null and startTime!=''">
+and c.ACCT_NUMBER &gt;= #{startTime} and c.ACCT_NUMBER &lt;= #{endTime}
+</if>
+<if test="railLine !=null and railLine !=''">
+and a.line_id = #{railLine}
+</if> GROUP BY a.CI ORDER BY theRank ASC LIMIT 5
+	</select>
+</mapper>

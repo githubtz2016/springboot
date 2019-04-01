@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ztesoft.rail.dao.UserDao">
+  <resultMap id="BaseResultMap" type="User">
+    <id column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="login_no" jdbcType="VARCHAR" property="loginNo" />
+    <result column="main_acct_id" jdbcType="VARCHAR" property="mainAcctId" />
+    <result column="main_pwd" jdbcType="VARCHAR" property="mainPwd" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="org_id" jdbcType="VARCHAR" property="orgId" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="EFFECT_DATE" jdbcType="DATE" property="EFFECT_DATE" />
+    <result column="EXPIRE_DATE" jdbcType="DATE" property="EXPIRE_DATE" />
+    <result column="APP_ACCT_DESC" jdbcType="VARCHAR" property="APP_ACCT_DESC" />
+    <result column="APP_ACCT_STATUS" jdbcType="CHAR" property="APP_ACCT_STATUS" />
+  </resultMap>
+
+    <!--根据从账号登录名查询用户信息 -->
+  <select id="selectByUserCode" parameterType="String" resultMap="BaseResultMap">
+      select * from user where login_no = #{appacctId}
+  </select>
+
+  <!--鉴权查询-->
+  <select id="selelctByAdmin" resultType="map">
+    select * from user_org where admin_login_no = #{adminLoginNo}
+  </select>
+  
+  <!--根据账户查询用户信息  -->
+  <select id="getUserByloginNo" parameterType="String" resultMap="BaseResultMap">
+    select * from user where login_no = #{loginNo}
+  </select>
+  
+  <!--  用户删除  -->
+  <delete id="deleteByUserId" parameterType="String">
+    delete from user
+    where user_id = #{userId}
+  </delete>
+  
+  <!-- 用户添加 -->
+  <insert id="insert" parameterType="User">
+    insert into user values (#{userId}, #{mainAcctId}, MD5(#{mainPwd}), #{loginNo}, #{userName}, #{orgId}, #{email},
+    #{mobile}, MD5(#{password}), #{EFFECT_DATE}, #{EXPIRE_DATE}, #{APP_ACCT_DESC}, '1')
+  </insert>
+  
+  <!-- 用户修改 -->
+  <update id="updateByUserId" parameterType="User">
+    update user
+    <set>
+      <if test="userId != null">
+        user_id = #{userId},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName},
+      </if>
+      <if test="orgId != null">
+        org_id = #{orgId},
+      </if>
+      <if test="email != null">
+        email = #{email},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile},
+      </if>
+      <if test="EFFECT_DATE != null">
+        EFFECT_DATE = #{EFFECT_DATE},
+      </if>
+      <if test="EXPIRE_DATE != null">
+        EXPIRE_DATE = #{EXPIRE_DATE},
+      </if>
+      <if test="APP_ACCT_DESC != null">
+        APP_ACCT_DESC = #{APP_ACCT_DESC}
+      </if>
+    </set>
+    where login_no = #{loginNo}
+  </update>
+
+  <!--重置密码-->
+  <update id="updatePasswordByUserId" parameterType="User">
+    update user
+    set password = MD5(#{password})
+    where user_id = #{userId}
+  </update>
+
+
+  <!--加锁/解锁账号-->
+  <update id="updateByStatus" parameterType="User">
+    update user
+    set APP_ACCT_STATUS = #{APP_ACCT_STATUS}
+    where user_id = #{userId}
+  </update>
+</mapper>

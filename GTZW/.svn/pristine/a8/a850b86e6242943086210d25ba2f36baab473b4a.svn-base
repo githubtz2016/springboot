@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ztesoft.rail.dao.HailwayMapDataDao">
+
+  <resultMap id="ResultMapData" type="com.ztesoft.rail.utils.PerformanceUtil">
+    <result column="line_id" property="line"/>
+    <result column="community_name" property="communityName"/>
+    <result column="value" property="indexData"/>
+    <result column="RU_long" property="ruLong"/>
+    <result column="RU_lat" property="ruLat"/>
+  </resultMap>
+
+
+  <!--#HTTP-->
+  <!--HTTP_IND1-->
+  <select id="dataIndex0" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,CONCAT(ROUND(c.HTTP_KP2/c.HTTP_KP1*100,2)) value from
+    hailway_community a left join hailway_http_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line != null and line != ''">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+  <!-- HTTP_IND2-->
+  <select id="dataIndex1" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,ROUND((HTTP_KP3)/(HTTP_KP2)) value from
+    hailway_community a left join hailway_http_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+  <!-- HTTP_IND5-->
+  <select id="dataIndex2" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,
+    (CASE WHEN SUM(HTTP_KP8) = 0 THEN 0 ELSE ROUND(SUM(HTTP_KP7*8000)*1.0/SUM(HTTP_KP8*1024),2) END) value from
+    hailway_community a left join hailway_http_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+  <!-- #FTP-->
+  <!--FTP_IND1-->
+  <select id="dataIndex3" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,
+    (CASE WHEN SUM(FTP_KP2) = 0 THEN 0 ELSE ROUND(SUM(FTP_KP1*8000)*1.0/SUM(FTP_KP2*1024),2) END) value from
+    hailway_community a left join hailway_ftp_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+
+  <!-- #IM-->
+  <!--IM_IND1-->
+  <select id="dataIndex4" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,
+    ROUND(IM_KP2/IM_KP1,2)*100 value from
+    hailway_community a left join hailway_im_h c on  a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+  <!--IM_IND2-->
+  <select id="dataIndex5" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,
+    (CASE WHEN SUM(IM_KP4) = 0 THEN 0 ELSE ROUND(SUM(IM_KP3*8000)*1.0/SUM(IM_KP4*1024),2) END) value from
+    hailway_community a left join hailway_im_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+  <!--IM_IND3-->
+  <select id="dataIndex6" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,
+    (CASE WHEN SUM(IM_KP6) = 0 THEN 0 ELSE ROUND(SUM(IM_KP5*8000)*1.0/SUM(IM_KP6*1024),2) END) value from
+    hailway_community a left join hailway_im_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+  <!-- VIDEO-->
+  <!--视频播放成功率-->
+  <!--VIDEO_IND1-->
+  <select id="dataIndex7" resultMap="ResultMapData" >
+
+    select a.RU_long,a.RU_lat, a.community_name,
+    ROUND(VIDEO_KP2/VIDEO_KP1,2)*100 value from
+    hailway_community a left join hailway_video_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+  <!-- 视频下载率-->
+  <!-- VIDEO_IND2-->
+  <select id="dataIndex8" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,
+    (CASE WHEN SUM(VIDEO_KP4) = 0 THEN 0 ELSE ROUND(SUM(VIDEO_KP3*8000)*1.0/SUM(VIDEO_KP4*1024),2) END) value from
+    hailway_community a left join hailway_video_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+  <!--RRC连击率-->
+  <!-- UU_IND1-->
+  <select id="dataIndex9" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,
+    ROUND(UU_KP2/UU_KP1,2)*100 value from
+    hailway_community a left join hailway_uu_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+  <!--Simme-->
+  <!--S1MME_IND1-->
+  <select id="dataIndex10" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,ROUND(SUM(S1MME_KP2)/SUM(S1MME_KP1),2)*100 value from
+    hailway_community a left join hailway_s1mme_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+  <!--S1MME_IND2-->
+  <select id="dataIndex11" resultMap="ResultMapData">
+
+    select a.RU_long,a.RU_lat, a.community_name,ROUND(S1MME_KP4/S1MME_KP3,2)*100 value from
+    hailway_community a left join hailway_s1mme_h c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+
+  </select>
+
+  <!-- S1MME_IND1_VOLTE-->
+  <select id="volteDataIndex0" resultMap="ResultMapData">
+    SELECT a.RU_long,a.RU_lat, a.community_name,ROUND(sum(c.S1MME_KP2)/sum(c.S1MME_KP1),3)*100 value
+    FROM hailway_community  a
+    left join hailway_s1mme_volte c on a.CI=c.CI
+    <if test="startTime!=null">
+    and c.ACCT_NUMBER &gt;= #{startTime}
+  </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+  </select>
+
+  <!--S1MME_IND2_VOLTE-->
+  <select id="volteDataIndex1" resultMap="ResultMapData">
+    SELECT a.RU_long,a.RU_lat, a.community_name,ROUND(sum(c.S1MME_KP4)/sum(c.S1MME_KP3),3)*100 value
+    FROM hailway_community  a
+    left join hailway_s1mme_volte c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+  </select>
+
+  <!--VOLTE_IND5-->
+  <select id="volteDataIndex2" resultMap="ResultMapData">
+    SELECT a.RU_long,a.RU_lat, a.community_name,ROUND(sum(c.VOLTE_KP10)/sum(c.VOLTE_KP9),3)*100 value
+    FROM hailway_community a
+    left join  hailway_sip_volte c
+    on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+  </select>
+
+  <!--VOLTE_IND1-->
+  <select id="volteDataIndex3" resultMap="ResultMapData">
+    SELECT a.RU_long,a.RU_lat, a.community_name,ROUND(sum(c.VOLTE_KP2)/sum(c.VOLTE_KP1),3)*100 value
+    FROM hailway_community  a
+    left join hailway_sip_volte c
+    on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+  </select>
+
+  <!-- VOLTE_IND2-->
+  <select id="volteDataIndex4" resultMap="ResultMapData">
+    SELECT a.RU_long,a.RU_lat, a.community_name,ROUND(sum(c.VOLTE_KP4)/sum(c.VOLTE_KP3),3)*100 value
+    FROM  hailway_community  a
+    left join hailway_sip_volte c
+    on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+  </select>
+
+  <!-- SV_IND1-->
+  <select id="volteDataIndex5" resultMap="ResultMapData">
+    SELECT a.RU_long,a.RU_lat, a.community_name, ROUND(sum(c.SV_KP2)/sum(c.SV_KP1),3)*100 value
+    FROM hailway_community  a
+    left join hailway_sv_volte  c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+  </select>
+
+  <!--MOS_IND1-->
+  <select id="volteDataIndex6" resultMap="ResultMapData">
+    SELECT a.RU_long,a.RU_lat, a.community_name, ROUND(sum(c.MOS_KP2)/sum(c.MOS_KP1),3)*100 value
+    FROM hailway_community  a
+    left join hailway_mos_volte c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+  </select>
+
+  <!-- UU_IND1-->
+  <select id="volteDataIndex7" resultMap="ResultMapData">
+    SELECT a.RU_long,a.RU_lat, a.community_name, ROUND(sum(c.UU_KP2)/sum(c.UU_KP1),3)*100 value
+    FROM hailway_community  a
+    left join hailway_rrc_volte  c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+  </select>
+
+  <!--X2_IND1-->
+  <select id="volteDataIndex8" resultMap="ResultMapData">
+    SELECT a.RU_long,a.RU_lat, a.community_name, ROUND(sum(c.X2_KP2)/sum(c.X2_KP1),3)*100 value
+    FROM hailway_community a
+    left join   hailway_x2_volte c on a.CI=c.CI
+    <if test="startTime!=null">
+      and c.ACCT_NUMBER &gt;= #{startTime}
+    </if>
+    <if test="endTime!=null">
+      and c.ACCT_NUMBER &lt;= #{endTime}
+    </if>
+    where 1=1
+    <if test="line!=null">
+      and a.line_id=#{line}
+    </if>
+    and a.order_num IS NOT NULL
+    and a.RU_lat IS NOT NULL
+    GROUP BY a.station_id
+    ORDER BY a.order_num
+  </select>
+
+
+
+</mapper>
